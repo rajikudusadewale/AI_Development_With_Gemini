@@ -12,6 +12,7 @@ def ask_and_get_answer(prompt, img):
 
     return response.text
 
+# This function converts a Streamlit image upload object (st_image) into a PIL (Python Imaging Lib) Image object.
 def st_image_to_pil(st_image):
     import io
     from PIL import Image
@@ -24,7 +25,7 @@ def st_image_to_pil(st_image):
     return pil_image
 
 
-# application entry point
+# defining application entry point
 if __name__ == '__main__':
     # loading the environment variables from the .env file that contains the Google API key.
     load_dotenv(find_dotenv(), override=True)
