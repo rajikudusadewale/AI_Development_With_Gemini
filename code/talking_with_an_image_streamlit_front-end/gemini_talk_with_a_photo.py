@@ -34,7 +34,7 @@ if __name__ == '__main__':
     genai.configure(api_key=os.environ.get('GOOGLE_API_KEY'))
 
     # displaying the Gemini logo and subheader.
-    st.image('gemini.png') # this image is in the current directory
+    st.image('gemini.png') 
     st.subheader('Talking With an Image ✨')
 
     # creating a file upload widget for the user to select an image.
